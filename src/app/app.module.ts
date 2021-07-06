@@ -9,6 +9,7 @@ import { InlineTemplateComponentComponent } from './inline-template-component/in
 import { InlineStylesComponent } from './inline-styles/inline-styles.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { ClassBindingComponent } from './class-binding/class-binding.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
     InlineTemplateComponentComponent,
     InlineStylesComponent,
     InterpolationComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    ClassBindingComponent
   ],
   imports: [
     BrowserModule

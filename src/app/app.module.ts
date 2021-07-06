@@ -8,6 +8,7 @@ import { AttributeComponentComponent } from './attribute-component/attribute-com
 import { InlineTemplateComponentComponent } from './inline-template-component/inline-template-component.component';
 import { InlineStylesComponent } from './inline-styles/inline-styles.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
     AttributeComponentComponent,
     InlineTemplateComponentComponent,
     InlineStylesComponent,
-    InterpolationComponent
+    InterpolationComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule

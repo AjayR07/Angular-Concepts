@@ -12,6 +12,8 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -25,10 +27,12 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     PropertyBindingComponent,
     ClassBindingComponent,
     StyleBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwoWayBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

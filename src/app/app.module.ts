@@ -14,6 +14,9 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import {FormsModule} from "@angular/forms";
+import { ConditionalsLoopingsComponent } from './conditionals-loopings/conditionals-loopings.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import {FormsModule} from "@angular/forms";
     ClassBindingComponent,
     StyleBindingComponent,
     EventBindingComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    ConditionalsLoopingsComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

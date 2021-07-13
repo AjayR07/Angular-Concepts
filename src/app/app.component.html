@@ -553,6 +553,30 @@
 
   <h1 style="margin-top: 5%;margin-bottom: 3%">Two Way Binding</h1>
   <app-two-way-binding></app-two-way-binding>
+
+  <h1 style="margin-top: 5%;margin-bottom: 3%">Conditionals & Looping</h1>
+  <app-conditionals-loopings></app-conditionals-loopings>
+
+  <h1 style="margin-top: 5%;margin-bottom: 3%">Component Interaction</h1>
+
+  <h3>Parent to child</h3>
+  <li> Pass Parent Data as prop in the child component tag</li>
+  <li> [parentData]="name" [name]="name" </li>
+  <li> Recieve the same in the child using Input Decorator</li>
+  <li>  @Input() public parentData=""</li>
+  <li> Alias Name in child :   @Input("name") public name:any</li>
+
+  <h3> Child to Parent </h3>
+  <li> Create an obj to eventEmitter and emit event</li>
+  <li>
+    this.childEvent.emit("I'm happy to see your Interest.")
+  </li>
+  <li>
+    Recieve it on the parent as
+  </li>
+  <li>(childEvent)="msg=$event"    $event will give the arguments</li>
+  <app-parent style="margin-left: 10%"></app-parent>
+
 </div>
 </div>
 

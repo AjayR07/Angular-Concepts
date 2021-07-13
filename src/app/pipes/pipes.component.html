@@ -1,0 +1,43 @@
+
+<ul>
+  <li>Normal Text  : {{name}}</li>
+  <li> Lowercase Pipe : {{name|lowercase}}</li>
+  <li> Uppercase Pipe : {{name|uppercase}}</li>
+  <li> Titlecase Pipe : {{name|titlecase}}</li>
+
+  <li> Slice Pipe : {{name|slice:3}}</li>
+  <li> Slice Pipe : {{name|slice:3:7}}</li>
+
+  <li> Json Pipe : {{data|json}}</li>
+
+  <li class="bol"> Number Pipe</li>
+  <li> 1.232 | number: '1.2-3     :    {{ 1.232 | number: '1.2-3'}}</li>
+  <li> 1.232 | number: '2.4-5'    :    {{ 1.232 | number: '2.4-5'}}</li>
+  <li> 1.232 | number: '1.1-2'    :    {{ 1.232 | number: '1.1-2'}}</li>
+
+  <li class="bol">Percent Pipe</li>
+  <li> 0.25|percent               :    {{0.25 | percent}}</li>
+
+  <li class="bol">Currency Pipe</li>
+  <li> 0.25|currency               :    {{0.25 | currency}}</li>
+  <li> 0.25|currency:'GBP'         :    {{0.25 | currency:'GBP'}}  Refer ISO Currency Codes</li>
+  <li> 0.25|currency:'GDB':'code'               :    {{0.25 | currency:'GBP':'code'}} </li>
+
+  <li class="bol"> Date Pipe</li>
+  <li>Date : {{date}}</li>
+  <li>date | date : 'short' : {{date | date : 'short'}}</li>
+  <li>date | date : 'shortDate' : {{date | date : 'shortDate'}}</li>
+  <li>date | date : 'shortTime' : {{date | date : 'shortTime'}}</li>
+  <li> Similarly we have medium and long</li>
+  <li> One thing to remember is Pipe changes the data only on the view ( not the actual one )</li>
+
+</ul>
+<style>
+  li{
+    padding: 1%;
+  }
+  .bol{
+    font-weight: bolder;
+    padding: 1%;
+  }
+</style>

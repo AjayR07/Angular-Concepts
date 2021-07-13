@@ -17,6 +17,7 @@ import {FormsModule} from "@angular/forms";
 import { ConditionalsLoopingsComponent } from './conditionals-loopings/conditionals-loopings.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ChildComponent } from './child/child.component';
     TwoWayBindingComponent,
     ConditionalsLoopingsComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
